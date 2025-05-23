@@ -2,6 +2,14 @@
   "name": "taylor-swift-club",
   "compatibility_date": "2025-05-23",
   "assets": {
-    "directory": "."
+    "directory": ".",
+    "exclude": [
+      "node_modules/**/*",
+      "package.json",
+      "package-lock.json",
+      "wrangler.jsonc",
+      ".git/**/*",
+      ".gitignore"
+    ]
   }
 } 

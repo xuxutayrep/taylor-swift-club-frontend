@@ -5,7 +5,7 @@
   "scripts": {
     "start": "serve .",
     "build": "echo 'No build step required'",
-    "pages:deploy": "wrangler pages deploy --project-name=taylor-swift-club ."
+    "pages:deploy": "wrangler pages deploy --project-name=taylor-swift-club . --exclude node_modules .git"
   },
   "devDependencies": {
     "wrangler": "^4.16.1"
