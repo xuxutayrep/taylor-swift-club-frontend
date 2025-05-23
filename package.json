@@ -1,0 +1,9 @@
+{
+  "name": "taylor-swift-club-frontend",
+  "version": "1.0.0",
+  "description": "Taylor Swift Club 网站前端",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build required'"
+  }
+} 
