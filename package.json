@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Taylor Swift Club 网站前端",
   "scripts": {
-    "start": "serve .",
-    "build": "echo 'No build step required'",
-    "pages:deploy": "wrangler pages deploy --project-name=taylor-swift-club . --exclude node_modules .git"
+    "start": "serve dist",
+    "prebuild": "mkdir -p dist && cp -r *.html *.jpg *.png *.JPG *.ttf *.mp3 dist/ 2>/dev/null || true",
+    "build": "npm run prebuild",
+    "pages:deploy": "wrangler pages deploy dist --project-name=taylor-swift-club"
   },
   "devDependencies": {
     "wrangler": "^4.16.1"
